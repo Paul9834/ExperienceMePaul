@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Manifest de la aplicación Paul9834.  Declara la clase de aplicación
+     anotada con @HiltAndroidApp para habilitar la inyección de
+     dependencias, y utiliza una única actividad para alojar la UI
+     construida con Jetpack Compose.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paul9834">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:label="Paul9834"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Paul9834">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
