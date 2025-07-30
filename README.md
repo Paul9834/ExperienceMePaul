@@ -45,22 +45,28 @@
     - Si el endpoint requiere autenticación o servidor local, ajusta `NetworkModule.kt` en la capa `di` para cambiar la URL base.
 
 ## Estructura del repositorio
-
-Paul9834/
-├── app/
-│ ├── build.gradle.kts
-│ └── src/main/
-│ ├── java/com/example/paul9834/
-│ │ ├── data/
-│ │ ├── domain/
-│ │ ├── di/
-│ │ ├── presentation/
-│ │ ├── MainActivity.kt
-│ │ └── MyApplication.kt
-│ └── res/values/
-│ ├── themes.xml
-│ └── ...
+```
+Paul9834
+├── app
+│   ├── build.gradle.kts
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── example
+│           │           └── paul9834
+│           │               ├── data               ← Modelos de red, servicios, repositorio concreto
+│           │               ├── domain             ← Modelos de dominio, interfaces, casos de uso
+│           │               ├── di                 ← Módulos Hilt para inyección de dependencias
+│           │               ├── presentation       ← UI (composables), ViewModel y lógica de presentación
+│           │               ├── MainActivity.kt    ← Entry point de la app
+│           │               └── MyApplication.kt   ← Clase de aplicación, arranque de Hilt
+│           └── res
+│               └── values
+│                   ├── themes.xml                ← Temas y estilos de la app
+│                   └── ...
 └── settings.gradle.kts
+```
 
 ## Contribuciones
 
